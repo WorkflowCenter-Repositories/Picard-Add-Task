@@ -1,0 +1,49 @@
+node_types:
+
+  picard-ADDOrReplaceRG:
+    derived_from: workflow_service
+    properties:
+      Validation-Stringency:
+        type: string
+        default: LENIENT
+      Comments:
+        type: string
+      RG-ID:
+        type: string
+        default: 1
+      RG-Library:
+        type: string
+        default: test-lib
+      RG-Platform:
+        type: string
+        default: illumina
+      RG-Platform-Unit:
+        type: string
+        default: unknown
+      RG-Sample-Name:
+        type: string
+        default: 1
+      RG-Sequencing-Center:
+        type: string
+        default: 1
+      RG-Description:
+        type: string
+        default: ''
+      RG-Predicted-Insert-Size:
+        type: string
+        default: ''
+      Sort-Order:
+        type: string
+        default: ''
+      RG-Run-Date:
+        type: string
+        default: ''
+      #input
+      input-SAM_BAM-files:
+        type: string
+        default: file-wrapper
+      #output
+      output-SAM_BAM-files:
+        type: string
+        default: file-wrapper
+
